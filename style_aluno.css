@@ -1,7 +1,9 @@
 body{
     margin: 0;
     display: grid;
-    grid-template-areas: 'nav nav' 'aside main' 'aside main';
+    grid-template-areas: 'nav nav'
+                        'aside main'
+                         'aside main';
     grid-gap: 0.5%;
     background-color: rgb(58, 70, 255);
     grid-template-columns: 25% 74.5%;
@@ -32,7 +34,7 @@ nav div:nth-child(1) p{
 nav div:nth-child(2){
     width: 40%;
     height: 100%;
-    display: flex;
+    display: flex
     align-items: center;
 }
 nav div:nth-child(2) input{

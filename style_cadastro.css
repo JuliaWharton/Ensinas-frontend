@@ -1,80 +1,114 @@
 body{
     margin:0;
-    background-color: #ff6600
+    background-color: #0d0d0d
 }
 
 #grid{
     display:grid;
     grid-template-areas:'. login1 logo login2 .';
-     grid-template-columns: 25px 435px 1fr 435px 25px;
-     grid-template-rows: 656px;
+    grid-template-columns: 25px 435px 1fr 435px 25px;
+    grid-template-rows: 656px;
 }
-.login1{
+.cadastro{
     grid-area: login1;
-    background-color: lightgrey;
+    background-color: #ff6600;
     border-bottom-right-radius: 5%;
     border-top-right-radius: 5%;
-    border-bottom: 7px solid grey;
-    border-right: 4px solid grey;
+    border-bottom: 7px solid #262626;
+    border-right: 4px solid #262626;
 }
-#login1texto1{
+#cadastro1texto1{
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
 }
-#login1texto1 p{
+#cadastro1texto1 p{
     font-size: 20pt;
     font-family: 'Roboto';
-    color: rgb(245, 134, 52);
+    color: white;
     margin-top: 10px;
     margin-bottom: 0px;
     padding-top: 17px;
 }
-#login1texto2{
+#cadastro1texto2{
     display: flex;
     justify-content: center;
+    width: 431px;
+    height: 60px;
 }
-#login1texto2 h1{
+#cadastro1texto2 h1{
     margin-top: 0px;
     font-size: 50pt;
     font-family: 'Roboto';
     padding-left: 9px;
-    color: rgb(58, 70, 255);
+    color: white;
 }
-.inputlogin1{
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaocadastre {
+    background-color: white;
+    
+}
+.botaocadastre {
+    border: 1.5px solid white;
+    border-radius: 10px;
+    color: #ff6600;
+    cursor: pointer;
+    margin: 0px 5px;
+    padding: 10px 25px;
+    transition: all 0.3s;
+    font-weight: bolder;
+}
+
+#cadastro1texto3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cadastro1texto3 {
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+}
+
+.inputcadastro1{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-
+    
 }
-.inputlogin1 p{
+.inputcadastro1 p{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 16pt;
     font-family: 'Roboto';
-    color: rgb(245, 134, 52);
+    color: white;
 }
-.inputlogin1 input{
+.inputcadastro1 input{
     width: 350px;
     height: 24px;
     border-radius: 25px;
     border: none;
 }
-.inputlogin1 input:focus{
+.inputcadastro1 input:focus{
     outline: none;
 }
-.login1texto3{
+.cadastro1texto3{
     padding-left: 30px;
 }
-.login1texto3 h1{
+.cadastro1texto3 h1{
     font-family: 'Roboto';
-    color: rgb(58, 70, 255);
+    color: white;
     font-size: 26pt;
     margin-bottom: 0px;
 }
-.login1texto3 p{
+.cadastro1texto3 p{
     font-family: 'Roboto';
-    color: rgb(245, 134, 52);
+    color: white;
     font-size: 18pt;
     margin-top: 0px;
 }
@@ -97,10 +131,14 @@ body{
     justify-content: center;
     text-align: center;
 }
+#logotexto span{
+    color: #ff6600
+
+}
 #logotexto h1{
     font-size: 80px;
     font-family: 'Roboto';
-    color: rgb(58, 70, 255);
+    color: white;
     padding-left: 7px;
     margin-top:3px;
     margin-bottom:3px;
@@ -108,91 +146,89 @@ body{
 #logotexto p{
     font-size: 30px;
     font-family: 'Roboto';
-    color: rgb(245, 134, 52);
+    color: white;
     margin-top: 3px;
     padding-bottom: 50px;
-
+    
 }
 #imgapp{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
+    
 }
 #imgapp img{
     display: flex;
     height: auto;
     width: 140px;
-
+    
 }
 /* DIVISA DIVISA DIVISA DIVISA */
-.login2{
+.cadastro2{
     grid-area: login2;
-    background-color: lightgrey;
+    background-color: #ff6600;
     border-bottom-left-radius: 5%;
     border-top-left-radius: 5%;
-    border-bottom: 7px solid grey;
-    border-left: 4px solid grey;
+    border-bottom: 7px solid #0d0d0d;
+    border-left: 4px solid #0d0d0d;
 }
-#login2texto1{
+#cadastro2texto1{
     display: flex;
     justify-content: center;
     margin-bottom: 0px;
 }
-#login2texto1 p{
+#cadastro2texto1 p{
     font-size: 20pt;
     font-family: 'Roboto';
-    color: rgb(245, 134, 52);
+    color: white;
     margin-top: 10px;
     margin-bottom: 0px;
     padding-top: 17px;
 }
-#login2texto2{
+#cadastro2texto2{
     display: flex;
     justify-content: center;
+    width: 431px;
+    height: 60px;
 }
-#login2texto2 h1{
+#cadastro2texto2 h1{
     margin-top: 0px;
     font-size: 50pt;
     font-family: 'Roboto';
     padding-left: 9px;
-    color: rgb(58, 70, 255);
+    color: white;
+    
 }
-.inputlogin2{
+#cadastro2texto3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cadastro2texto3{font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+    
+}
+.inputcadastro2{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-
+    
 }
-.inputlogin2 p{
+.inputcadastro2 p{
     margin-top: 2px;
     margin-bottom: 2px;
     font-size: 16pt;
     font-family: 'Roboto';
-    color: rgb(245, 134, 52);
+    color: white;
 }
-.inputlogin2 input{
+.inputcadastro2 input{
     width: 350px;
     height: 24px;
     border-radius: 25px;
     border: none;
 }
-.inputlogin2 input:focus{
+.inputcadastro2 input:focus{
     outline: none;
-}
-.login2texto3{
-    padding-left: 30px;
-}
-.login2texto3 h1{
-    font-family: 'Roboto';
-    color: rgb(58, 70, 255);
-    font-size: 26pt;
-    margin-bottom: 0px;
-}
-.login2texto3 p{
-    font-family: 'Roboto';
-    color: rgb(245, 134, 52);
-    font-size: 18pt;
-    margin-top: 0px;
 }
