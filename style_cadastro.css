@@ -1,0 +1,237 @@
+body{
+    margin:0;
+    background-color: #0d0d0d
+}
+#grid{
+    display:grid;
+    grid-template-areas:'. login1 logo login2 .';
+    grid-template-columns: 25px 435px 1fr 435px 25px;
+    grid-template-rows: 656px;
+}
+.cadastro{
+    grid-area: login1;
+    background-color: #ff6600;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#cadastro1texto1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+#cadastro1texto1 p{
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-top: 17px;
+}
+#cadastro1texto2{
+    display: flex;
+    justify-content: center;
+    width: 431px;
+    height: 60px;
+}
+#cadastro1texto2 h1{
+    margin-top: 0px;
+    font-size: 50pt;
+    font-family: 'Roboto';
+    padding-left: 9px;
+    color: white;
+}
+#cadastro1texto3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cadastro1texto3{
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+}
+#cadastro1texto3 p{
+    margin-bottom: 0px;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.botaocadastre {
+    background-color: white;
+}
+.botaocadastre {
+    border: 1.5px solid white;
+    border-radius: 10px;
+    color: #ff6600;
+    cursor: pointer;
+    margin: 0px 5px;
+    padding: 10px 25px;
+    font-weight: bolder;
+}
+.botaocadastre:hover:hover {
+    box-shadow: 0 6px 9px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
+#cadastro1texto3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cadastro1texto3 {
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+    margin-bottom: 10px;
+}
+
+.inputcadastro1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    
+}
+.inputcadastro1 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 16pt;
+    font-family: 'Roboto';
+    color: white;
+}
+.inputcadastro1 input{
+    width: 365px;
+    height: 24px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 15px;
+}
+.inputcadastro1 input:focus{
+    outline: none;
+}
+/* DIVISA DIVISA DIVISA DIVISA */
+.logo{
+    grid-area: logo;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#logotexto img{
+    height: 100px;
+    width: auto;
+    padding-top: 20px;
+    
+}
+#logotexto{
+    display: flex;
+    display: table-column;
+    justify-content: center;
+    text-align: center;
+}
+#logotexto span{
+    color: #ff6600
+
+}
+#logotexto h1{
+    font-size: 80px;
+    font-family: 'Roboto';
+    color: white;
+    padding-left: 7px;
+    margin-top:3px;
+    margin-bottom:3px;
+}
+#logotexto p{
+    font-size: 30px;
+    font-family: 'Roboto';
+    color: white;
+    margin-top: 3px;
+    padding-bottom: 50px;
+    
+}
+#imgapp{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+#imgapp img{
+    display: flex;
+    height: auto;
+    width: 140px;
+}
+#google{
+    padding-bottom: 30px;
+}
+/* DIVISA DIVISA DIVISA DIVISA */
+.cadastro2{
+    grid-area: login2;
+    background-color: #ff6600;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#cadastro2texto1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+#cadastro2texto1 p{
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding-top: 17px;
+}
+#cadastro2texto2{
+    display: flex;
+    justify-content: center;
+    width: 431px;
+    height: 60px;
+}
+#cadastro2texto2 h1{
+    margin-top: 0px;
+    font-size: 50pt;
+    font-family: 'Roboto';
+    padding-left: 9px;
+    color: white;
+    
+}
+#cadastro2texto3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cadastro2texto3{
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+}
+#cadastro2texto3 p{
+    margin-bottom: 10px;
+}
+.inputcadastro2{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    
+}
+.inputcadastro2 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 16pt;
+    font-family: 'Roboto';
+    color: white;
+}
+.inputcadastro2 input{
+    width: 365px;
+    height: 24px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 15px;
+}
+.inputcadastro2 input:focus{
+    outline: none;
+}
