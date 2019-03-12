@@ -2,7 +2,6 @@ body{
     margin:0;
     background-color: #0d0d0d
 }
-
 #grid{
     display:grid;
     grid-template-areas:'. login1 logo login2 .';
@@ -12,10 +11,9 @@ body{
 .cadastro{
     grid-area: login1;
     background-color: #ff6600;
-    border-bottom-right-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom: 7px solid #262626;
-    border-right: 4px solid #262626;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #cadastro1texto1{
     display: flex;
@@ -43,15 +41,26 @@ body{
     padding-left: 9px;
     color: white;
 }
+#cadastro1texto3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#cadastro1texto3{
+    font-size: 20pt;
+    font-family: 'Roboto';
+    color: white;
+}
+#cadastro1texto3 p{
+    margin-bottom: 0px;
+}
 .botao {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .botaocadastre {
     background-color: white;
-    
 }
 .botaocadastre {
     border: 1.5px solid white;
@@ -60,10 +69,12 @@ body{
     cursor: pointer;
     margin: 0px 5px;
     padding: 10px 25px;
-    transition: all 0.3s;
     font-weight: bolder;
 }
-
+.botaocadastre:hover:hover {
+    box-shadow: 0 6px 9px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
 #cadastro1texto3{
     display: flex;
     justify-content: center;
@@ -73,6 +84,7 @@ body{
     font-size: 20pt;
     font-family: 'Roboto';
     color: white;
+    margin-bottom: 10px;
 }
 
 .inputcadastro1{
@@ -89,28 +101,14 @@ body{
     color: white;
 }
 .inputcadastro1 input{
-    width: 350px;
+    width: 365px;
     height: 24px;
     border-radius: 25px;
     border: none;
+    padding-left: 15px;
 }
 .inputcadastro1 input:focus{
     outline: none;
-}
-.cadastro1texto3{
-    padding-left: 30px;
-}
-.cadastro1texto3 h1{
-    font-family: 'Roboto';
-    color: white;
-    font-size: 26pt;
-    margin-bottom: 0px;
-}
-.cadastro1texto3 p{
-    font-family: 'Roboto';
-    color: white;
-    font-size: 18pt;
-    margin-top: 0px;
 }
 /* DIVISA DIVISA DIVISA DIVISA */
 .logo{
@@ -162,16 +160,17 @@ body{
     display: flex;
     height: auto;
     width: 140px;
-    
+}
+#google{
+    padding-bottom: 30px;
 }
 /* DIVISA DIVISA DIVISA DIVISA */
 .cadastro2{
     grid-area: login2;
     background-color: #ff6600;
-    border-bottom-left-radius: 5%;
-    border-top-left-radius: 5%;
-    border-bottom: 7px solid #0d0d0d;
-    border-left: 4px solid #0d0d0d;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #cadastro2texto1{
     display: flex;
@@ -205,10 +204,13 @@ body{
     align-items: center;
     justify-content: center;
 }
-#cadastro2texto3{font-size: 20pt;
+#cadastro2texto3{
+    font-size: 20pt;
     font-family: 'Roboto';
     color: white;
-    
+}
+#cadastro2texto3 p{
+    margin-bottom: 10px;
 }
 .inputcadastro2{
     display: flex;
@@ -224,10 +226,11 @@ body{
     color: white;
 }
 .inputcadastro2 input{
-    width: 350px;
+    width: 365px;
     height: 24px;
     border-radius: 25px;
     border: none;
+    padding-left: 15px;
 }
 .inputcadastro2 input:focus{
     outline: none;

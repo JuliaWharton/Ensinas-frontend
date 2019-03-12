@@ -2,7 +2,12 @@ body{
     margin:0;
     background-color: #0d0d0d
 }
-
+body p:hover{
+    cursor: default;
+}
+body h1:hover{
+    cursor: default;
+}
 #grid{
     display:grid;
     grid-template-areas:'. login1 logo login2 .';
@@ -12,10 +17,9 @@ body{
 .login1{
     grid-area: login1;
     background-color: #ff6600;
-    border-bottom-right-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom: 7px solid #262626;
-    border-right: 4px solid #262626;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #login1texto1{
     display: flex;
@@ -41,57 +45,14 @@ body{
     padding-left: 9px;
     color: white;
 }
-.inputlogin1{
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
-
-}
-.inputlogin1 p{
-    margin-top: 2px;
-    margin-bottom: 2px;
-    font-size: 16pt;
-    font-family: 'Roboto';
-    color: white;
-}
-.inputlogin1 input{
-    width: 350px;
-    height: 24px;
-    border-radius: 25px;
-    border: none;
-}
-.inputlogin1 input:focus{
-    outline: none;
-}
-.botao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.botaologin {
-    background-color: white;
-    
-}
-.botaologin {
-    border: 1.5px solid white;
-    border-radius: 10px;
-    color: #ff6600;
-    cursor: pointer;
-    margin: 0px 5px;
-    padding: 10px 25px;
-    transition: all 0.3s;
-    font-weight: bolder;
-}
 .login1texto3{
     padding-left: 30px;
 }
 .login1texto3 h1{
     display: flex;
     align-items: center;
-    justify-content: center
-}
-.login1texto3 h1{
+    justify-content: center;
+    padding-right: 30px;
     font-family: 'Roboto';
     color: white;
     font-weight: bolder;
@@ -112,6 +73,53 @@ body{
     margin-top: 0px;
     
 }
+.inputlogin1{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+.inputlogin1 p{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 16pt;
+    font-family: 'Roboto';
+    color: white;
+}
+.inputlogin1 input{
+    width: 365px;
+    height: 24px;
+    border-radius: 25px;
+    border: none;
+    padding-left: 15px;
+}
+.inputlogin1 input:focus{
+    outline: none;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botaologin {
+    background-color: white;  
+}
+.botaologin {
+    border: 1.5px solid white;
+    border-radius: 10px;
+    color: #ff6600;
+    cursor: pointer;
+    margin: 0px 5px;
+    padding: 10px 25px; 
+    font-weight: bolder;
+}
+.botaologin:focus{
+    outline:none;
+}
+.botaologin:hover:hover {
+    box-shadow: 0 6px 9px 0 rgba(0,0,0,0.24), 0 10px 14px 0 rgba(0,0,0,0.19);
+    transition: 0.3s;
+}
 /* DIVISA DIVISA DIVISA DIVISA */
 .logo{
     grid-area: logo;
@@ -122,8 +130,7 @@ body{
 #logotexto img{
     height: 100px;
     width: auto;
-    padding-top: 20px;
-    
+    padding-top: 20px; 
 }
 #logotexto{
     display: flex;
@@ -148,29 +155,29 @@ body{
     color: white;
     margin-top: 3px;
     padding-bottom: 50px;
-
 }
 #imgapp{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 #imgapp img{
     display: flex;
     height: auto;
     width: 140px;
-
+    cursor: pointer;
+}
+#google{
+    padding-bottom: 30px;
 }
 /* DIVISA DIVISA DIVISA DIVISA */
 .login2{
     grid-area: login2;
     background-color: #ff6600;
-    border-bottom-right-radius: 5%;
-    border-top-right-radius: 5%;
-    border-bottom: 7px solid #262626;
-    border-right: 4px solid #262626;
+    border-radius: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 #login2texto1{
     display: flex;
@@ -200,7 +207,6 @@ body{
     display: flex;
     flex-direction: column;
     padding-left: 30px;
-
 }
 .inputlogin2 p{
     margin-top: 2px;
@@ -210,10 +216,11 @@ body{
     color: white;
 }
 .inputlogin2 input{
-    width: 350px;
+    width: 365px;
     height: 24px;
     border-radius: 25px;
     border: none;
+    padding-left: 15px;
 }
 .inputlogin2 input:focus{
     outline: none;
@@ -221,7 +228,6 @@ body{
 .login2texto3{
     padding-left: 30px;
     padding-right: 30px;
-    
 }
 .login2texto3 h1{
     display: flex;
