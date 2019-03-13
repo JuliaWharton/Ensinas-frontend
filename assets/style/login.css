@@ -188,24 +188,6 @@ body h1:hover {
     padding-bottom: 50px;
 }
 
-#imgapp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-#imgapp img {
-    display: flex;
-    height: auto;
-    width: 140px;
-    cursor: pointer;
-}
-
-#google {
-    padding-bottom: 30px;
-}
-
 /* DIVISA DIVISA DIVISA DIVISA */
 .login2 {
     grid-area: login2;
