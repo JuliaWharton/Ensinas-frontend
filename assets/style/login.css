@@ -6,36 +6,10 @@
 
 body {
     background-color: #0d0d0d;
-    width: 100%;
-    height: 100vh;
-}
-
-#main {
-    display: grid;
-    grid-template-areas:
-        '. . . . .'
-        '. login1 logo login2 .'
-        '. . . . .';
-    grid-template-columns: 1fr 380px 400px 380px 1fr;
-    grid-template-rows: 1fr 420px 1fr;
-
-    min-height: 100%;
-    width: 100%;
 }
 
 p {
     color: white;
-}
-
-input {
-    width: 330px;
-    height: 25px;
-    border-radius: 10px;
-    padding: 5px 10px;
-}
-
-input:focus {
-    outline: none;
 }
 
 button {
@@ -56,6 +30,27 @@ button:focus {
 button:hover {
     box-shadow: 0 6px 9px 0 rgba(0, 0, 0, 0.24), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
     transition: 0.3s;
+}
+
+#main {
+    display: grid;
+    grid-template-areas:
+        '. . . . .'
+        '. login1 logo login2 .'
+        '. . . . .';
+    grid-template-columns: 1fr 380px 400px 380px 1fr;
+    grid-template-rows: 1fr 420px 1fr;
+
+    min-height: 100%;
+    width: 100%;
+}
+
+#main .login:nth-child(1) {
+    grid-area: login1;
+}
+
+#main .login:nth-child(3) {
+    grid-area: login2;
 }
 
 #logo {
@@ -102,9 +97,7 @@ button:hover {
 }
 
 .login-texto h2 {
-    margin-top: 0px;
     font-size: 50pt;
-    padding-left: 9px;
     color: white;
 }
 
@@ -116,12 +109,4 @@ button:hover {
 .login-input p {
     font-size: 16pt;
     text-align: left;
-}
-
-#main .login:nth-child(1) {
-    grid-area: login1;
-}
-
-#main .login:nth-child(3) {
-    grid-area: login2;
 }
